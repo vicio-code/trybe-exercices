@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Pizza
+Banana
+HTML
+Abacate
+Jest

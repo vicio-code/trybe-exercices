@@ -1,0 +1,5 @@
+Uma frase
+Para testar
+Uns comandos Bash
+Fui na rua jogar futebol 
+cansei de escrever

@@ -1,0 +1,5 @@
+Crie um
+novo arquivo
+chamado frases
+pelo terminal e adicione
+algumas frase de sua escolha
