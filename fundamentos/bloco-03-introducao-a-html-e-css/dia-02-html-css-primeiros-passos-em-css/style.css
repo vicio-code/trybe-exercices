@@ -1,0 +1,33 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+}
+p {
+  font-weight: 600;
+  font-size: 3em;
+}
+body {
+  font-size: 16px;
+}
+ul {
+  background-color: palevioletred;
+}
+.colorQuestion {
+  background-color: rebeccapurple;
+}
+.lorem {
+  font-style: oblique;
+  line-height: 2em;
+  text-align: center;
+  text-decoration: line-through;
+}
+#yellow {
+  color: yellow;
+}
+#red {
+  color: red;
+}
+#brown {
+  color: brown;
+}
