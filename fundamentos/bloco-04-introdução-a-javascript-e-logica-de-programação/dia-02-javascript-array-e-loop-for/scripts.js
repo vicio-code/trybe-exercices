@@ -88,4 +88,45 @@ function exercise9() {
   }
   return true;
 }
-exercise9();
+
+// exercise 10
+
+function exercise10(numbers) {
+  for (let index = 1; index < numbers.length; index++) {
+    for (let secondIndex = 0; secondIndex < numbers.length - 1; secondIndex++) {
+      if (numbers[index] < numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+  return numbers;
+}
+
+// exercise 11
+
+function exercise11(numbers) {
+  for (let index = 1; index < numbers.length; index++) {
+    for (let secondIndex = 0; secondIndex < numbers.length - 1; secondIndex++) {
+      if (numbers[index] > numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+  return numbers;
+}
+
+// exercise 12
+
+function exercise12(numbers) {
+  multiArr = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i + 1] === undefined) multiArr[i] = numbers[i] * 2;
+    else multiArr[i] = numbers[i] * numbers[i + 1];
+  }
+  return multiArr;
+}
+console.log(exercise12(numbers));
