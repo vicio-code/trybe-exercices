@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      // Exercise 1
+      function exercise1() {
+        const h1 = document.createElement("h1");
+        h1.innerText = "Exercício 5.2 - JavaScript DOM";
+        document.body.appendChild(h1);
+      }
+      exercise1();
+
+      // Exercise 2
+      function exercise2() {
+        const main = document.createElement("main");
+        main.classList.add("main-content");
+        document.body.appendChild(main);
+      }
+      exercise2();
+
+      // Exercise 3
+      function exercise3() {
+        const section = document.createElement("section");
+        const main = document.getElementsByTagName("main");
+        section.classList.add("center-content");
+        for (let index = 0; index < main.length; index++) {
+          main[index].appendChild(section);
+        }
+      }
+      exercise3();
+
+      // Exercise 4
+      function exercise4() {
+        const tagP = document.createElement("p");
+        const section = document.getElementsByClassName("center-content");
+        tagP.innerText = "Algum texto";
+        for (let index = 0; index < section.length; index++) {
+          section[index].appendChild(tagP);
+        }
+      }
+      exercise4();
+
+      // Exercise 5
+      function exercise5() {
+        const section = document.createElement("section");
+        const main = document.getElementsByTagName("main");
+        section.classList.add("left-content");
+        for (let index = 0; index < main.length; index++) {
+          main[index].appendChild(section);
+        }
+      }
+      exercise5();
+
+      // Exercise 6
+      function exercise6() {
+        const section = document.createElement("section");
+        const main = document.getElementsByTagName("main");
+        section.classList.add("right-content");
+        for (let index = 0; index < main.length; index++) {
+          main[index].appendChild(section);
+        }
+      }
+      exercise6();
+
+      // Exercise 7
+      function exercise7() {
+        const img = document.createElement("img");
+        const section = document.getElementsByClassName("left-content");
+        img.classList.add("small-image");
+        img.src = "https://picsum.photos/200";
+        for (let index = 0; index < section.length; index++) {
+          section[index].appendChild(img);
+        }
+      }
+      exercise7();
+
+      // Exercise 8
+      function exercise8() {
+        const ul = document.createElement("ul");
+        const listValues = [
+          "um",
+          "dois",
+          "tres",
+          "quatro",
+          "cinco",
+          "seis",
+          "sete",
+          "oito",
+          "nove",
+          "dez",
+        ];
+        const section = document.getElementsByClassName("right-content");
+        for (let index = 0; index < 10; index++) {
+          let li = document.createElement("li");
+          li.innerText = listValues[index];
+          ul.appendChild(li);
+        }
+        for (let index = 0; index < section.length; index++) {
+          section[index].appendChild(ul);
+        }
+      }
+      exercise8();
+
+      // Exercise 9
+      function exercise9() {
+        const main = document.getElementsByTagName("main");
+        for (let i = 0; i < 3; i++) {
+          let h3 = document.createElement("h3");
+          h3.innerText = `Elemento ${i + 1}`;
+          main[0].appendChild(h3);
+        }
+      }
+      exercise9();
+
+      // Exercise 10
+      function exercise10() {
+        const h1 = document.getElementsByTagName("h1");
+        for (let i = 0; i < h1.length; i++) {
+          h1[i].classList.add("title");
+        }
+      }
+      exercise10();
+
+      // Exercise 11
+      function exercise11() {
+        const h3 = document.getElementsByTagName("h3");
+        for (let i = 0; i < h3.length; i++) {
+          h3[i].classList.add("description");
+        }
+      }
+      exercise11();
+
+      // Exercise 12
+      function exercise12() {
+        const section = document.getElementsByTagName("section");
+        const main = document.getElementsByTagName("main");
+        for (let index = 0; index < section.length; index++) {
+          if (section[index].className === "left-content") {
+            main[0].removeChild(section[index]);
+          }
+        }
+      }
+      exercise12();
+
+      // Exercise 13
+      function exercise13() {
+        const section = document.getElementsByClassName("right-content");
+        section[0].style.marginRight = "auto";
+      }
+      exercise13();
+
+      // Exercise 14
+      function exercise14() {
+        const section = document.getElementsByClassName("center-content");
+        section[0].style.backgroundColor = "green";
+      }
+      exercise14();
+
+      // Exercise 15
+      function exercise15() {
+        const ul = document.getElementsByTagName("ul");
+        console.log(ul[0].lastChild);
+        for (let index = 0; index < 2; index++) {
+          ul[0].lastChild.remove();
+        }
+      }
+      exercise15();
+    </script>
+  </body>
+</html>
