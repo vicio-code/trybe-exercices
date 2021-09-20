@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo WebStorage</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exercícios 5.4</h1>
+    </header>
+    <main>
+      <h2>Mude o site</h2>
+      <div class="inputs">
+        <p>Cor de fundo:</p>
+        <input
+          type="radio"
+          name="background-color"
+          class="background-color"
+          id="white"
+          value="branco"
+          checked
+        />
+        <label for="white">Branco</label>
+        <input
+          type="radio"
+          name="background-color"
+          class="background-color"
+          value="verde"
+          id="green"
+        />
+        <label for="green">Verde</label>
+        <input
+          type="radio"
+          name="background-color"
+          class="background-color"
+          value="Rosa"
+          id="pink"
+        />
+        <label for="pink">Rosa</label>
+        <input
+          type="radio"
+          name="background-color"
+          class="background-color"
+          value="dourado"
+          id="gold"
+        />
+        <label for="gold">Dourado</label>
+        <p>Cor do Texto:</p>
+        <input type="color" id="text-color" name="textColor" />
+        <label for="text-color">Escolhar uma cor</label>
+        <p>Tamanho da Fonte</p>
+        <input type="number" id="text-size" />
+        <label for="text-size">Digite um tamanho</label>
+        <p>Espaçamento entre as linhas</p>
+        <input type="range" id="line-height" min="0" max="10" />
+      </div>
+      <div id="text-content">
+        <p>
+          This isn't a car. It's ends here. I'll be standing where l belong.
+          Between you and the people of Gotham. I'm Batman My anger outweights
+          my guilt. Does it come in black? Accomplice? I'm gonna tell them the
+          whole thing was your idea.
+        </p>
+        <p>
+          It was a dog. It was a big dog. Accomplice? I'm gonna tell them the
+          whole thing was your idea.
+        </p>
+        <p>
+          I'll be standing where l belong. Between you and the peopIe of Gotham.
+          Bruce Wayne, eccentric billionaire.
+        </p>
+        <p>
+          Swear to me! Does it come in black? Someone like you. Someone who'll
+          rattle the cages.
+        </p>
+        <p>
+          Hero can be anyone. Even a man knowing something as simple and
+          reassuring as putting a coat around a young boy shoulders to let him
+          know the world hadn't ended. This isn't a car. It's ends here.
+        </p>
+        <p>
+          It's ends here. I'm not wearing hockey pads. Someone like you. Someone
+          who'll rattle the cages. Someone like you. Someone who'll rattle the
+          cages. The first time I stole so that I wouldn't starve, yes. I lost
+          many assumptions about the simple nature of right and wrong. And when
+          I traveled I learned the fear before a crime and the thrill of
+          success. But I never became one of them.
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
